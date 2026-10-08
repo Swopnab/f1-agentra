@@ -1,7 +1,8 @@
-# Signalroom
+# F1 Agentra
 
-A student-first, independent educational website concept about agentic research,
-risk awareness, and human judgment. Static HTML, CSS, and JavaScript; no build
+A student-origin, independent educational website concept about agentic trading
+research, risk awareness, and human judgment. Originally imagined for F-1 students;
+the educational demo is free for everyone to explore. Static HTML, CSS, and JavaScript; no build
 step, dependencies, server integrations, or financial services.
 
 ## Demo, not trading results
@@ -39,5 +40,32 @@ site buildless. Do not add private project files to this repository.
 ## Accessibility
 
 Responsive layouts, semantic landmarks, keyboard-focus indicators, a skip link,
-native disclosure controls, pressed-state scenario buttons, live decision text,
-and reduced-motion support are included. No third-party fonts or images load.
+native disclosure controls, keyboard-operable workspace tabs, pressed-state
+scenario buttons, live decision text, and reduced-motion support are included.
+Decorative motion can be paused. The 3D core supports drag, arrow keys, and reset
+buttons. Its animation stops offscreen and when the document is hidden.
+No third-party fonts, images, packages, scripts, or live feeds load.
+
+## Interactive examples
+
+- Original projected-geometry 3D research core and layered interface panels.
+- Expanding educational workflow, spotlight enhancement, and responsive navigation.
+- Three fictional companies with overview, evidence, and decision-journal views.
+- Scrubbable synthetic chart and explicitly fictional comparison path.
+- Missing-input demonstration that disables discussion and hides the score.
+- In-memory demo journal, reset control, and virtual risk/cash sizing arithmetic.
+
+These are interface demonstrations, not a restarted trading system or performance
+evidence. The virtual sizing example is not a personal financial recommendation.
+
+## Design references
+
+Original implementations informed by these public 21st.dev interaction patterns:
+
+- [Spotlight Cards](https://21st.dev/@claude-ai/components/spotlight)
+- [Radial Orbital Timeline](https://21st.dev/@pathtoreisliencebv234/components/radial-orbital-timeline)
+- [Orbital Hero Section](https://21st.dev/@yura/components/orbital-hero-section)
+- [Lightweight spotlight implementation guidance](https://docs.21st.dev/blog/react-spotlight-effect-components)
+
+No third-party component source, private-project assets, or personal content is
+bundled. The concept name does not claim trademark registration or affiliation.
