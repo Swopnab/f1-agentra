@@ -1,0 +1,9 @@
+# Only intentionally reviewed, public-safe website files belong in this repo.
+*
+!index.html
+!styles.css
+!app.js
+!mark.svg
+!.nojekyll
+!.gitignore
+!README.md
