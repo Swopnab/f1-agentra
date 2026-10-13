@@ -69,3 +69,15 @@ Original implementations informed by these public 21st.dev interaction patterns:
 
 No third-party component source, private-project assets, or personal content is
 bundled. The concept name does not claim trademark registration or affiliation.
+
+## Repeatable regression checks
+
+The fixed hypothetical sizing arithmetic lives in `sizing.js`; invalid or non-finite inputs are rejected, zero capital stays finite, and tests enforce both the risk and cash-allocation ceilings. This remains fictional interface arithmetic, not a backtest or financial model.
+
+```sh
+npm ci
+npx playwright install chromium --only-shell
+npm test
+```
+
+Node 24 LTS and the free, development-only Playwright tool run the unit/browser suite. CI covers the three synthetic scenarios, disabled discussion when inputs are missing, keyboard tabs, journal/reset, sizing constraints, reduced motion and three responsive viewports. The deployed site still has no runtime dependencies or backend. No real market dataset, brokerage API, or trading feature has been added.

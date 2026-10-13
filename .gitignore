@@ -7,3 +7,15 @@
 !.nojekyll
 !.gitignore
 !README.md
+!sizing.js
+!package.json
+!package-lock.json
+!tests/
+!tests/*.cjs
+!.github/
+!.github/workflows/
+!.github/workflows/tests.yml
+
+/node_modules/
+/dist-site/
+/test-results/
