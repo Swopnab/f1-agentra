@@ -215,16 +215,15 @@ all('[data-stage]').forEach(button=>button.addEventListener('click',()=>{
 function renderRisk() {
   const capital = Number(byId('virtual-budget').value);
   const fraction = Number(byId('risk-budget').value)/1000;
-  const shares = Math.min(capital*fraction,capital*.25/20);
-  const allocation = shares*20;
+  const {shares,allocation,allocationFraction} = DemoSizing.calculateSizing(capital,fraction);
   byId('budget-output').textContent=money(capital);
   byId('risk-output').textContent=`${(fraction*100).toFixed(1)}%`;
   byId('virtual-budget').setAttribute('aria-valuetext',`${capital.toLocaleString('en-US')} virtual dollars`);
   byId('risk-budget').setAttribute('aria-valuetext',`${(fraction*100).toFixed(1)} percent of virtual capital`);
   byId('size-output').textContent=shares.toFixed(2);
   byId('loss-output').textContent=money(shares);
-  byId('allocation-caption').textContent=`${money(allocation)} allocation · ${(allocation/capital*100).toFixed(1)}% of virtual capital`;
-  byId('allocation-fill').style.transform=`scaleX(${allocation/capital})`;
+  byId('allocation-caption').textContent=`${money(allocation)} allocation · ${(allocationFraction*100).toFixed(1)}% of virtual capital`;
+  byId('allocation-fill').style.transform=`scaleX(${allocationFraction})`;
 }
 ['virtual-budget','risk-budget'].forEach(id=>byId(id).addEventListener('input',renderRisk));
 
